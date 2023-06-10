@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <title>Crud - João Gabriel</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light mb-4">
+            <a class="navbar-brand" href="/">Crud - João Gabriel</a>
+        </nav>
+        <section class="card">
+            <div>
+                <table class="table table-striped table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Data-nascimento</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for pessoa in pessoas %}
+                        <tr>
+                            <td>{{pessoa.nome}}</td>
+                            <td>{{pessoa.cpf}}</td>
+                            <td>{{pessoa.dt_nasc}}</td>
+                            <td>{{pessoa.email}}</td>
+                            <td>{{pessoa.num_telefone}}</td>
+                            <td><a href="edit/{{ pessoa.cod_pessoa }}" class="btn btn-info">Editar</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div class="card-footer">
+            <a href="/new" class="btn btn-primary mb-2">Criar novo produto</a>   
+        </div>
+    </div>
+</body>
+
+
+</html>
