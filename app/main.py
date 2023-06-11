@@ -17,7 +17,7 @@ class Pessoa(BaseModel):
 
 
 app = FastAPI()
-templates = Jinja2Templates(directory=r"C:\Users\João Gabriel\python\crud\app\template")
+templates = Jinja2Templates(directory=r"app\template")
 
 @app.get("/", response_class=HTMLResponse)
 async def show_people(request: Request):

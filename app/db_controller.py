@@ -5,10 +5,10 @@ class Config:
         self.config={
             'postgres':{
                 'user':'postgres',
-                "password":"123456",
-                "host":"127.0.0.1",
-                "port":"5432",
-                "database":"bd01people"
+                "password":"img4iNVvnyFtyrfzRqRB",
+                "host":"containers-us-west-27.railway.app",
+                "port":"6638",
+                "database":"railway"
             }
         }
 class Connection(Config):
