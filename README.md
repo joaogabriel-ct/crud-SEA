@@ -1,24 +1,40 @@
-# crud-SEA
-CRUD WEB, seguindo os parâmetros solicitados no e-mail. 
+# CRUD-SEA
 
-Realizado o CRUD conforme solicitado, realizando todas as operações.
-Opreções:
-/insert e /new: para criar e inputar os dados dentro do Banco de dados.
-/update e /edit: para realizar o update da linha do banco de dados.
-/delete: apenas por requisição delete via API, para que possa ter mais controle nos dados. 
+Este é um projeto de um CRUD (Create, Read, Update, Delete) WEB desenvolvido em Python, utilizando os parâmetros especificados no e-mail.
 
-Serviço Criado em python:
-Framework: FastAPI
-server: Uvicorn
-Banco de dados realizado PostgreSQL, o banco de dados já está online na nuvem no site Railray 
+## Funcionalidades
 
-Seguindo a estrutura do Banco 
+O projeto permite realizar as seguintes operações:
+
+- `/insert` e `/new`: criação e inserção de dados na tabela "pessoas" do banco de dados.
+- `/update` e `/edit`: atualização de linhas existentes na tabela "pessoas" do banco de dados.
+- `/delete`: exclusão de registros por meio de requisições DELETE via API.
+
+## Tecnologias Utilizadas
+
+- Framework: FastAPI
+- Servidor: Uvicorn
+- Banco de Dados: PostgreSQL (o banco de dados está hospedado na nuvem no site Railray)
+
+## Estrutura do Banco de Dados
+
+A tabela "pessoas" possui a seguinte estrutura:
 
 CREATE TABLE pessoas (
-  cod_pessoa SERIAL PRIMARY KEY,
-  nome VARCHAR(100),
-  cpf VARCHAR(100),
-  dt_nasc DATE,
-  email VARCHAR(100),
-  num_telefone BIGINT
+cod_pessoa SERIAL PRIMARY KEY,
+nome VARCHAR(100),
+cpf VARCHAR(100),
+dt_nasc DATE,
+email VARCHAR(100),
+num_telefone BIGINT
 );
+
+
+As credenciais já estão no projeto o Banco está online
+
+Para executar o projeto, siga as etapas abaixo:
+
+1. Clone o repositório para o seu ambiente local.
+2. Instale as dependências do projeto executando o comando `pip install -r requirements.txt`.
+3. Execute o servidor utilizando o comando `uvicorn main:app --reload`.
+4. Acesse a interface do projeto em um navegador através da URL fornecida pelo FastAPI.
