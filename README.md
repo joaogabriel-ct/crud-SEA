@@ -10,4 +10,15 @@ Opreções:
 Serviço Criado em python:
 Framework: FastAPI
 server: Uvicorn
-Banco de dados realizado PostgreSQL
+Banco de dados realizado PostgreSQL, o banco de dados já está online na nuvem no site Railray 
+
+Seguindo a estrutura do Banco 
+
+CREATE TABLE pessoas (
+  cod_pessoa SERIAL PRIMARY KEY,
+  nome VARCHAR(100),
+  cpf VARCHAR(100),
+  dt_nasc DATE,
+  email VARCHAR(100),
+  num_telefone BIGINT
+);
