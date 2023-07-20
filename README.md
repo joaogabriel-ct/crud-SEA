@@ -1,6 +1,6 @@
-# CRUD-SEA
+# CRUD
 
-Este é um projeto de um CRUD (Create, Read, Update, Delete) WEB desenvolvido em Python, utilizando os parâmetros especificados no e-mail.
+Este é um projeto de um CRUD (Create, Read, Update, Delete) WEB desenvolvido em Python.
 
 ## Funcionalidades
 
